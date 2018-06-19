@@ -1,0 +1,19 @@
+select cmpny_code
+        , week_seq
+        , indvdl_seq
+        , emp_no
+        , weeks
+        , date_1
+        , date_2
+        , date_3
+        , date_4
+        , date_5
+        , date_6
+        , date_7
+        , week_base_work_mnt
+        , week_over_work_mnt
+        , week_restde_work_mnt
+        , week_tot_work_mnt
+    from BST_INDVDL_WORK_WEEK
+      where   del_yn != 'Y'
+      order by weeks asc
